@@ -131,6 +131,7 @@ class StreamParser:
             self._parser = None
 
     def feed_data(self, data):
+        self.counter = 0
         """send data to current parser or store in buffer."""
         if data is None:
             return
